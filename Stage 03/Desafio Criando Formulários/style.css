@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #EFEFEF;
+  font-family: 'Poppins', sans-serif;
+  color: #4E4958;
+  align-items: center;
+}
+
+body::before {
+  content: '';
+  background-color: #535971;
+  width: 100%;
+  height: 436px;
+
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+.page {
+  width: 750px;
+  margin: 140px auto 140px;
+}
+
+header {
+  color: #FFFFFF;
+  width: 320px;
+}
+
+header h1 {
+  font-family: 'Staatliches', cursive;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 60px;  
+}
+
+header p {
+  margin-top: 20px;
+
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+form {
+  background-color: #FFFFFF;
+
+  margin: 60px auto 0;
+  border-radius: 20px 20px 0px 0px;
+  padding: 64px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+fieldset {
+  border: none;
+}
+
+fieldset legend {
+  font-family: 'Staatliches', cursive;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+
+  color: #535971;
+
+  width: 100%;
+  border-bottom: 1px solid #E6E6F0;
+  padding-bottom: 16px;
+}
+
+.allname {
+  display: flex;
+  gap: 20px;
+}
+
+.input-wrapper {
+  margin-top: 48px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input-wrapper label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.input-wrapper span {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #C1BCCC;
+}
+
+.input-wrapper span:hover {
+  color: #6d6a72;
+}
+
+.input-wrapper input {
+  height: 56px;
+  background: #FAFAFC;
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+  color: #C1BCCC;
+  font-size: 20px;
+
+  padding: 0 24px;
+}
+
+.allname .input-wrapper input {
+  width: 300px;
+}
+
+.first .input-wrapper {
+  margin-top: 0;
+}
+
+.first legend {
+  border: none;
+
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 34px;
+
+  margin-top: 16px;
+}
+
+.col3 {
+  display: flex;
+  gap: 32px;
+}
+
+.col3 > :nth-child(1){
+  width: 100%;
+}
+
+.dasate {
+  display: flex;
+  gap: 10px;
+}
+
+footer {
+  height: 160px;
+  padding: 50px 70px;
+
+  background: #535971;
+  border-radius: 0px 0px 20px 20px;
+}
+
+footer .button {
+  border: none;
+  height: 56px;
+  width: 100%;
+
+  background: #FF5374;
+  border-radius: 20px;
+
+  font-family: 'Staatliches', cursive;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+footer .button:hover {
+  background-color: #FF5374;
+  cursor: pointer;
+}
+
+input:invalid {
+  border: 1px solid #FF5374;
+}
