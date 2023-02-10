@@ -28,7 +28,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 O desafio foi proposto no curso Explorer da Rocketseat. A ideia é reconstruir um layout do zero seguindo os ensinamentos passados em aula.
 
-- [Visite o projeto online](https://guiogigo.github.io/Rocketseat-Mentoria/)
+- [Visite o projeto online](https://guiogigo.github.io/Rocketseat-Desafio-Mentoria/)
 
 -----
 <p align="center">Feito por: <strong>Guilherme Batista</strong></p>
