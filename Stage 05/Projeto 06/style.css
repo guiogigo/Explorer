@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+
+  background: linear-gradient(287.56deg, #C2E9FB 0%, #A1C4FD 100%);
+
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+body, input, button {
+  font-family: 'DM Sans', sans-serif;
+}
+
+main {
+  background: #FFFFFF;
+
+  padding: 4.8rem 6.4rem 6.4rem;
+  margin-top: -12rem;
+
+  width: min(42.8rem, 90%);
+
+  box-shadow: 0 .2rem .4rem rgba(0, 0, 0, 0.1);
+  border-radius: .6rem;
+
+  text-align: center;
+
+}
+
+.hide {
+  display: none;
+}
+
+
+/* SCREEN 1*/
+h1 {
+  font-family: 'Montserrat', sans-serif;
+
+  font-size: 2.4rem;
+}
+
+h1, p {
+  color: #34355B;
+}
+
+p {
+  opacity: 0.8;
+  margin: 1.6rem 0 4.8rem;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+}
+
+input, button {
+  border: none;
+  padding: 1.6rem;
+}
+
+input {
+  background: #DCE2E9;
+  border-radius: .4rem 0 0 .4rem; 
+  
+  width: 6rem;
+  
+  line-height: 2.1rem;
+}
+
+button {
+  background: #7879F1;
+  border-radius: 0 .4rem .4rem 0;
+
+  color: white;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: background .3s;
+}
+
+button:hover {
+  background: #6d6ddf;
+}
+
+/* SCREEN 2*/
+h2 {
+  font-size: 2.4rem;
+  line-height: 150%;  
+  font-weight: normal;
+  color: #34355B;
+
+  margin-bottom: 3.3rem;
+}
+
+.screen2 button {
+  border-radius: .4rem;
+}

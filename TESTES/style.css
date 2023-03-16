@@ -1,0 +1,23 @@
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 200px;
+  gap: 10px
+}
+
+.item1 {
+  background: red;
+  grid-area: 2/1/3/4;
+}
+
+.item2 {
+  background: blue;
+}
+
+.item3 {
+  background: green;
+}
+
+.item4 {
+  background: purple;
+}

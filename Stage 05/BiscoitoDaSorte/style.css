@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+.hide {
+  display: none;
+}
+
+body {
+  font-size: 1.6rem;
+  height: 100vh;
+  background: linear-gradient(45deg, #190361 0%, #BB00FF 100%);
+
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+main {
+  background-color: hsla(0, 0%, 100%, 1);
+  width: min(42.8rem, 90%);
+
+  padding: 4.8rem 6.4rem 6.4rem;
+  margin-top: -12rem;
+
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.8);
+  border-radius: .5rem;
+}
+
+/* SCREEN 1 */
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.4rem;
+  color: #34355B;
+}
+
+p, button {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.5rem;
+}
+
+p {
+  line-height: 2rem;
+  color: #34355B;
+
+  margin: 1.6rem 0 2rem;
+}
+
+.screen1 img:hover {
+  animation: shake 1.5s;
+  animation-iteration-count: infinite;
+
+  cursor: pointer;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+/* SCREEN 2 */
+.card {
+  background: #E4EDF1;
+  box-shadow: .2rem .2rem .2rem rgba(85, 85, 85, 0.5);
+  padding: 1rem;
+
+  margin: 1.7rem 0;
+
+  animation: showMessage 1.5s both;
+
+}
+
+.card p {
+  margin: 0;
+
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.4rem;
+  color: #000000;
+}
+
+.screen2 button {
+  border: none;
+  padding: 1.6rem;
+
+  margin-top: 1.7rem;
+  background: #FF9500;
+  border-radius: .4rem;
+
+  color: #FFFFFF;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: background  3s;
+}
+
+.screen2 button:hover {
+  background: #ff8800;
+}
+
+@keyframes showMessage {
+  0% {
+    transform: translateY(162px) scale(10%)
+  }
+  100% {
+    transform: translateY(0px) scale(100%);
+  }
+} 

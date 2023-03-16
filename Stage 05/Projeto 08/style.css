@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  
+  box-sizing: border-box;
+}
+
+:root {
+  --tc-base: #FFFFFF;
+
+  --bg-color: #121214;
+  --base: 194;
+  --svg-color: hsla(var(--base), 100%, 63%);
+  --bg-button: hsla(var(--base), 100%, 63%, 0.13);
+
+  font-size: 62.5%;
+}
+
+.play svg path,
+.pause svg path,
+.sound-on svg path {
+  fill: var(--svg-color)
+}
+
+button svg {
+  width: clamp(3.2rem, 2rem + 12vw, 6.4rem);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+
+  background: var(--bg-color);
+  min-height: 100vh;
+  display: grid;
+}
+
+main {
+  justify-self: center;
+  align-self: end;
+}
+
+footer {
+  justify-self: end;
+  align-self: end;
+
+  padding: 0 4rem 3.2rem;
+}
+
+.countdown-wrapper {
+  color: var(--tc-base);
+  font-weight: 700;
+  font-size: clamp(4rem, 4rem + 10vw, 8.8rem);
+  line-height: 10.3rem;
+
+  display: flex;
+}
+
+.countdown-control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(1rem, 1rem + 2vw, 3.2rem);
+
+  background: hsla(var(--base), 100%, 63%, 0.13);
+  border-radius: 9999px;
+  padding: 2.2rem 4rem;
+
+  width: clamp(10rem, 10rem + 30vw, 22.8rem);
+  height: clamp(8rem, 5rem + 10vw, 10.8rem);
+}
+
+.hide {
+  display: none;
+}
+
+button {
+  background: transparent;
+  border: none;
+
+  cursor: pointer;
+}
