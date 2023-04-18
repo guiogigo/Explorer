@@ -17,6 +17,7 @@ body {
   height: 100vh;
   background: linear-gradient(45deg, #190361 0%, #BB00FF 100%);
 
+  padding: 25vh;
   display: grid;
   place-items: center;
   text-align: center;
