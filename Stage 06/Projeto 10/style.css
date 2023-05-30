@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+:root {
+  font-size: 62.5%;
+
+  --ff-primary: 'Poppins', sans-serif;
+  --tc-primary: #E6EDF6;
+  --tc-secundary: #2F81F7;
+  --bg-primary: #0d1117;
+  --bg-secundary: #2F81F7;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  white-space: nowrap;
+  clip: rect(0, 0, 0, 0);
+  border-width: 0;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: var(--ff-primary);
+  background-color: var(--bg-primary);
+  color: var(--tc-primary);
+}
+
+button {
+  background-color: var(--bg-secundary);
+}
+
+#app {
+  padding: 2rem;
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 2.5rem 0;
+}
+
+header h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.search input {
+  height: 3.2rem;
+  border: 1px solid #30363d;
+  background-color: #0d1117;
+  border-radius: .4rem 0 0 .4rem;
+  padding: 0 .8rem;
+
+  color: var(--tc-primary);
+}
+
+.search button {
+  height: 3.2rem;
+  border-radius: 0 .4rem .4rem 0;
+  border: none;
+  padding: 0 1rem;
+  color: var(--tc-primary);
+}
+
+.search button:hover {
+  cursor: pointer;
+  filter: brightness(0.8);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+
+  box-shadow: 0 1rem 2rem 0 rgba(67, 109, 187, 0.3);
+}
+
+table * {
+  font-size: 1.4rem;
+  color: var(--tc-primary);
+}
+
+table th {
+  background-color: var(--bg-secundary);
+  text-align: left;
+  font-weight: normal;
+  padding: 1.5rem;
+}
+
+table th:first-child {
+  border-top-left-radius: .4rem;
+}
+
+table th:last-child {
+  border-top-right-radius: .4rem;
+}
+
+table td {
+  padding: 1.5rem;
+  text-align: left;
+}
+
+table tr:nth-child(odd) {
+  background-color: #161b24;
+}
+table tr:nth-child(even) {
+  background-color: #1a1f27;
+}
+
+td.user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+td.user img {
+  width: 5rem;
+  height: 5rem;
+
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+td.user a {
+  text-decoration: none;
+}
+
+td.user a p {
+  font-weight: bold;
+}
+
+td .remove {
+  border: none;
+  background: none;
+
+  color: red;
+
+  cursor: pointer;
+}
