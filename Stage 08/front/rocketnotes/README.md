@@ -9,9 +9,14 @@
 - Convenção: Nome dos componentes em letra maiúscula e funções com o mesmo nome do arquivo
 - O retorno da função criada será o que vai ser exibido na página
 - Para poder retornar mais de um elemento basta criar uma div ou um fragment (<>content</>)
-- 
+- A propriedade Children captura tudo que está dentro do componente
 
 # Styled Components
 - CSS em Javascript para a componentização
 - Permite utilizar CSS-in-JS
 - Extensão: VSCODE-STYLED-COMPONENTS
+
+# React-Icons
+- Biblioteca para utilizar icons no react
+> npm i react-icons 
+- bilbioteca ri;
