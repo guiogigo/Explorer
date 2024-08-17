@@ -5,13 +5,13 @@ import GlobalStyles from "./styles/global.js"
 import { ThemeProvider } from 'styled-components'
 import theme from './styles/theme.js'
 
-import { New } from './pages/New/index.jsx'
+import { Routes } from './routes'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode >
     <ThemeProvider theme={theme}>
       <GlobalStyles/>
-        <New/>
+        <Routes/>
     </ThemeProvider>
   </StrictMode>,
 )

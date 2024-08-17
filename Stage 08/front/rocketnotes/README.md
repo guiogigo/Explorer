@@ -20,3 +20,7 @@
 - Biblioteca para utilizar icons no react
 > npm i react-icons 
 - bilbioteca ri;
+
+# React Router DOM
+- Para construção das rotas no react
+> npm i react-router-dom
