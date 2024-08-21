@@ -59,13 +59,11 @@ class NotesController {
     async index(req, res) {
         const {title, tags} = req.query;
         const user_id = req.user.id;
-        
 
         let notes;
 
         if(tags) {
             const filterTags = tags.split(",").map(tag => tag.trim());
-
 
             notes = await knex("tags")
             .select([
